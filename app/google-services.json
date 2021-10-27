@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "342186865675",
+    "project_id": "let-s-quiz-3fa4b",
+    "storage_bucket": "let-s-quiz-3fa4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342186865675:android:5557fccc0ea6b8ec0f030e",
+        "android_client_info": {
+          "package_name": "com.example.letsquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342186865675-mc1n8o2akjdpjatrbqctliv3d6dkdo5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEBkZ91ysTllwPg6aVTB3PjTBt8pHDMWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342186865675-mc1n8o2akjdpjatrbqctliv3d6dkdo5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
