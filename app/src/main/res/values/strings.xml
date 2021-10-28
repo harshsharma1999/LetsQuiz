@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Let\'s Quiz</string>
+    <string name="signup_here">Signup Here</string>
+    <string name="submit">SUBMIT</string>
+    <string name="todo">TODO</string>
 </resources>
