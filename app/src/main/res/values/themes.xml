@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.LetsQuiz" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <color name="material_blue_500">#5677fc</color>
+
         <item name="colorPrimary">@color/material_blue_500</item>
 
         <item name="colorPrimaryVariant">@color/purple_700</item>

@@ -15,6 +15,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar bar;
 
     private Object TextInputLayout;
+    private FirebaseAuth mAuth;
 
 
     @Override
@@ -46,7 +48,7 @@ t1=(TextInputLayout)findViewById(R.id.Email);
 bar.setVisibility(View.VISIBLE);
         String Email = Objects.requireNonNull(t1.getEditText()).getText().toString();
         String Password= Objects.requireNonNull(t2.getEditText()).getText().toString();
-        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         mAuth.createUserWithEmailAndPassword(Email, Password)
                 .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
