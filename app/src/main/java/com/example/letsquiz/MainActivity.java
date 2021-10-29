@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Object TextInputLayout;
     private FirebaseAuth mAuth;
+    TextView register;
 
 
     @Override
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         t1 = (TextInputLayout) findViewById(R.id.Email);
         t2 = (TextInputLayout) findViewById(R.id.pwd);
         bar = (ProgressBar) findViewById(R.id.progressBar);
+
+
 
 
     }
