@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-android:background="@drawable/bg"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
 
@@ -13,6 +13,7 @@ android:background="@drawable/bg"
         android:id="@+id/imageView"
         android:layout_width="182dp"
         android:layout_height="176dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
@@ -20,7 +21,6 @@ android:background="@drawable/bg"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062"
         app:srcCompat="@drawable/user"
-        android:contentDescription="@string/todo"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -63,10 +63,10 @@ android:background="@drawable/bg"
             tools:ignore="HardcodedText">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -81,10 +81,10 @@ android:background="@drawable/bg"
             tools:ignore="HardcodedText">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,9 +94,9 @@ android:background="@drawable/bg"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@color/btnBgColor"
+            android:onClick="signuphere"
             android:padding="10dp"
-            android:onClick= "signuphere"
-            android:text= "@string/submit"
+            android:text="@string/submit"
             android:textColor="#000"
             android:textSize="20sp"
             tools:ignore="UsingOnClickInXml" />
