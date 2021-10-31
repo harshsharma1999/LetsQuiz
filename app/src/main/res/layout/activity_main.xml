@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:shadowColor="@color/white"
-            android:text="@string/sign_up"
+            android:text="@string/sign_up_text"
             android:textColor="@color/green"
             android:textColorLink="#73CA0F"
             android:textSize="20sp" />
@@ -67,7 +67,7 @@
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-      android:padding="20dp"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,6 +85,7 @@
             tools:ignore="HardcodedText">
 
             <com.google.android.material.textfield.TextInputEditText
+               
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -129,10 +130,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:textAllCaps="false"
             android:background="@drawable/button_style"
+            android:padding="10dp"
             android:text="@string/Sign_in"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
             tools:ignore="UsingOnClickInXml" />
