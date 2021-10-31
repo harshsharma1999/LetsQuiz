@@ -5,5 +5,5 @@
     <string name="todo">TODO</string>
     <string name="sign_up">Sign Up</string>
     <string name="register">Don\'t have an account ?</string>
-    <string name="log_in">Log in</string>
+    <string name="Sign_in">Sign in</string>
 </resources>
