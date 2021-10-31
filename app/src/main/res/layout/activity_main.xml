@@ -5,98 +5,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-android:background="@drawable/bg"
     tools:context=".MainActivity">
 
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="Deprecated,TextViewEdits">
+
+        <TextView
+
+            android:id="@+id/registerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="@color/white"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:textColorLink="#8BC34A"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/registerUser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="@color/white"
+            android:text="@string/sign_up"
+            android:textColor="@color/green"
+            android:textColorLink="#73CA0F"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="182dp"
         android:layout_height="176dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062"
+        app:layout_constraintVertical_bias="0.063"
         app:srcCompat="@drawable/user"
-        android:contentDescription="@string/todo"
         tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="191dp"
-        android:layout_height="56dp"
-        android:autoText="true"
-        android:fontFamily="sans-serif-medium"
-        android:shadowColor="@color/white"
-        android:text="@string/signup_here"
-        android:textColor="#F9FEFF"
-        android:textColorLink="#8BC34A"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368"
-        tools:ignore="Deprecated,TextViewEdits" />
-
     <LinearLayout
-        android:layout_width="355dp"
+        android:id="@+id/loginLayout"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+      android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669">
+        app:layout_constraintVertical_bias="0.573">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/Email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="71dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="Your Email"
-            android:textColorHint="@color/borderColor"
+
             tools:ignore="HardcodedText">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/pwd"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="71dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="Your Password"
-            android:textColorHint="@color/borderColor"
+
             app:passwordToggleEnabled="true"
             tools:ignore="HardcodedText">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="@color/white"
+            android:text="@string/forget_password"
+            android:textColor="@color/red"
+            android:textColorLink="#8BC34A"
+            android:textSize="20sp"
+            tools:ignore="Deprecated,TextViewEdits" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="163dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
             android:background="@color/btnBgColor"
             android:padding="10dp"
-            android:onClick= "signuphere"
-            android:text= "@string/submit"
+            android:text="@string/log_in"
             android:textColor="#000"
             android:textSize="20sp"
             tools:ignore="UsingOnClickInXml" />
@@ -113,6 +148,21 @@ android:background="@drawable/bg"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintVertical_bias="0.325" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
