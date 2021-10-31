@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Let\'s Quiz</string>
-    <string name="signup_here">Signup Here</string>
+    <string name="forget_password">forget password ?</string>
     <string name="submit">SUBMIT</string>
     <string name="todo">TODO</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Don\'t have an account ?</string>
+    <string name="log_in">Log in</string>
 </resources>
