@@ -22,6 +22,8 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     TextInputLayout t1, t2;
+
+
     ProgressBar bar;
 
     private Object TextInputLayout;
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         t1 = (TextInputLayout) findViewById(R.id.Email);
         t2 = (TextInputLayout) findViewById(R.id.pwd);
         bar = (ProgressBar) findViewById(R.id.progressBar);
+
+
 
 
 

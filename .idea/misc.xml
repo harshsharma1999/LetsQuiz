@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/Users/HARSH/LetsQuiz/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2484375" />
         <entry key="..\:/Users/HARSH/LetsQuiz/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14351851851851852" />
         <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/drawable/button_style.xml" value="0.28072916666666664" />
         <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/drawable/edit_text_style.xml" value="0.28958333333333336" />
-        <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/drawable/text_style.xml" value="0.2984375" />
+        <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/mayank/StudioProjects/LetsQuiz/app/src/main/res/layout/activity_register.xml" value="0.22" />
       </map>
     </option>
   </component>
