@@ -1,34 +1,22 @@
 package com.example.letsquiz;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-    TextInputLayout t1, t2;
-
-
-    ProgressBar bar;
-
+    private TextInputLayout username, password;
+    private ProgressBar bar;
     private Object TextInputLayout;
     private FirebaseAuth mAuth;
-    TextView register;
+    private TextView register, register1;
 
 
     @Override
@@ -36,16 +24,36 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        t1 = (TextInputLayout) findViewById(R.id.Email);
-        t2 = (TextInputLayout) findViewById(R.id.pwd);
+        //Get reference of all the required views
+        username = (TextInputLayout) findViewById(R.id.Email);
+        password = (TextInputLayout) findViewById(R.id.pwd);
         bar = (ProgressBar) findViewById(R.id.progressBar);
+        register = findViewById(R.id.registerUser);
 
+        /*setting intent on register textview 1 to go to
+          register activity */
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goTo = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(goTo);
 
+            }
+        });
 
+         /*setting intent on register textview 2 to go to
+          register activity */
+        register1 = findViewById(R.id.registerUser2);
+        register1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goTo = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(goTo);
 
+            }
+        });
 
 
     }
-
 
 }
