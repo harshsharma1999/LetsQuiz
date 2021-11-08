@@ -2,20 +2,41 @@ package com.example.letsquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    String[] user= {"Teacher","Student"};
+    private String[] user= {"Teacher","Student"};
+    private TextView loginUser, loginUser2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        loginUser= findViewById(R.id.loginUser);
+        Intent goToLogin =new Intent(RegisterActivity.this,MainActivity.class);
+        loginUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(goToLogin);
+            }
+        });
+        loginUser2= findViewById(R.id.loginUser2);
+        loginUser2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(goToLogin);
+            }
+        });
+
 
         // Take the instance of Spinner and
         // apply OnItemSelectedListener on it which
