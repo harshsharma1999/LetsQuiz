@@ -7,7 +7,7 @@
     tools:context=".RegisterActivity">
     <LinearLayout
 
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -21,7 +21,7 @@
 
         <TextView
 
-            android:id="@+id/registerUser"
+            android:id="@+id/loginUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
@@ -33,7 +33,7 @@
 
         <TextView
 
-            android:id="@+id/registerUser2"
+            android:id="@+id/loginUser2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
@@ -46,7 +46,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView1"
         android:layout_width="182dp"
         android:layout_height="176dp"
         android:contentDescription="@string/todo"
@@ -56,11 +56,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.063"
-        app:srcCompat="@drawable/user"
+        app:srcCompat="@drawable/icons8_database_64"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
-        android:id="@+id/loginLayout"
+        android:id="@+id/registerLayout"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -70,6 +70,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.573">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/Email"

@@ -10,7 +10,7 @@
 
     <LinearLayout
 
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -32,6 +32,7 @@
             android:text="@string/register"
             android:textColor="@color/black"
             android:textColorLink="#8BC34A"
+            android:clickable="true"
             android:textSize="20sp" />
 
         <TextView
@@ -42,6 +43,7 @@
             android:fontFamily="sans-serif-medium"
             android:shadowColor="@color/white"
             android:text="@string/sign_up_text"
+            android:clickable="true"
             android:textColor="@color/green"
             android:textColorLink="#73CA0F"
             android:textSize="20sp" />
@@ -50,20 +52,19 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="182dp"
-        android:layout_height="176dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063"
-        app:srcCompat="@drawable/user"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/icons8_login_65"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
-        android:id="@+id/loginLayout"
+        android:id="@+id/registerLayout"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -122,7 +123,7 @@
             android:text="@string/forget_password"
             android:textColor="@color/red"
             android:textColorLink="#8BC34A"
-            android:textSize="20sp"
+            android:textSize="18sp"
             tools:ignore="Deprecated,TextViewEdits" />
 
         <androidx.appcompat.widget.AppCompatButton
